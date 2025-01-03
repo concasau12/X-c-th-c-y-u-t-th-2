@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6a11cb;
+    position: relative;
+    overflow: hidden;/* Để lớp phủ hoạt động */
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/img/trangchinh.jpg'); /* Đường dẫn đến ảnh nền */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Đưa ảnh nền xuống dưới */
+}
+.container {
+    position: relative; /* Giữ nội dung trên lớp nền */
+    z-index: 3;
+    background: rgba(17, 71, 166, 50%); /* Làm mờ hộp chứa để nổi bật */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* Hiệu ứng mờ */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 4px rgba(106, 17, 203, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 14px;
+    color: #ffff;
+    margin-bottom: 20px;
+}

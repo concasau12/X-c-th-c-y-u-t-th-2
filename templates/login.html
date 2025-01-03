@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác thực OTP</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>Xác thực OTP</h1>
+        <p>Mã OTP đã được gửi đến email của bạn. Vui lòng kiểm tra và nhập mã OTP bên dưới.</p>
+        <form method="POST" action="/otp">
+            <label for="otp">Nhập mã OTP:</label>
+            <input type="text" id="otp" name="otp" placeholder="Nhập mã OTP" required>
+            <button type="submit">Xác thực</button>
+        </form>
+    </div>
+</body>
+</html>

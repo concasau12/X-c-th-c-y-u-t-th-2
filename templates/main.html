@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông báo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #00264d;
+            color: white;
+            width: 250px;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+            border-radius: 4px;
+        }
+
+        .sidebar a:hover {
+            background-color: #004080;
+        }
+
+        /* Top Navbar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 250px;
+            right: 0;
+            background-color: #00264d;
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .top-navbar h1 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .top-navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .top-navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px; /* To accommodate the top navbar */
+        }
+
+        /* Header */
+        .header {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .header .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header .user-info {
+            font-size: 14px;
+        }
+
+        /* Content */
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .content h1 {
+            font-size: 18px;
+            color: #00264d;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #00264d;
+            padding-bottom: 5px;
+        }
+
+        .notification {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .notification:last-child {
+            border-bottom: none;
+        }
+
+        .notification p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .notification a {
+            color: #004080;
+            text-decoration: none;
+        }
+
+        .notification a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background-color: #ffe4e1;
+            border: 1px solid #ffcccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-left: 5px solid #ff6666;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>CÁC CHỨC NĂNG CHUNG</h2>
+        <a href="#">Tin tức - Thông báo</a>
+        <a href="#">Thời khóa biểu học tập</a>
+        <a href="#">Tin nhắn [1]</a>
+        <a href="#">Thư điện tử</a>
+    </div>
+
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <h1>TRƯỜNG ĐẠI HỌC KHOA HỌC - ĐẠI HỌC HUẾ</h1>
+        <div>
+            <a href="#">Hồ sơ học tập</a>
+            <a href="#">Lịch cá nhân</a>
+            <a href="#">Đổi mật khẩu</a>
+            <a href="/">Đăng xuất</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">TRƯỜNG ĐẠI HỌC KHOA HỌC - ĐẠI HỌC HUẾ</div>
+            <div class="user-info">Nguyễn Văn Định | Khóa 45 (2021-2025)</div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="content">
+            <h1>THÔNG BÁO</h1>
+
+            <div class="note">Nhà trường hiện đang tiến hành khảo sát ý kiến sinh viên về hoạt động giảng dạy. Xin bạn vui lòng bấm <a href="#">vào đây</a> để trả lời khảo sát. Cảm ơn!</div>
+
+            <div class="notification">
+                <p><strong>Thông báo danh sách sinh viên hoàn thành Tuần sinh hoạt công dân đợt 3, năm học 2024 - 2025</strong></p>
+                <p><a href="#">Chi tiết thông báo</a></p>
+            </div>
+
+            <div class="notification">
+                <p><strong>Thông báo về việc các lớp học phần đối với sinh viên lớp Kỹ sư cầu nối Nhật Bản và lớp Kỹ sư cầu nối Hàn Quốc học kỳ 2, năm học 2024 - 2025</strong></p>
+                <p><a href="#">Chi tiết thông báo</a></p>
+            </div>
+
+            <div class="notification">
+                <p><strong>Kết quả phúc khảo bài thi kết thúc học phần kỳ III, năm học 2023-2024</strong></p>
+                <p><a href="#">Chi tiết thông báo</a></p>
+            </div>
+
+            <div class="notification">
+                <p><strong>Thông báo danh sách sinh viên K43 (hệ 5 năm), K44 (hệ 4 năm) đã kết thúc chương trình học chính khóa nhưng chưa tốt nghiệp</strong></p>
+                <p><a href="#">Chi tiết thông báo</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
